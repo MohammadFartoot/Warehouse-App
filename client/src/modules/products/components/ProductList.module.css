@@ -1,0 +1,169 @@
+.tableContainer {
+    display: flex;
+    margin: 20px auto;
+    width: 1140px;
+    height: 737px;
+    border-radius: 30px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4
+}
+
+:global(body.darkMode) .tableContainer {
+    background-color: #131313;
+    border: 1px solid #131010;
+}
+
+.tableHeader {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #F2F2F2;
+    direction: rtl;
+}
+
+.productName {
+    font-family: Vazirmatn-Medium, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: right;
+    color: #282828;
+    margin-right: 60px;
+}
+
+.quantity {
+    font-family: Vazirmatn-Medium, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: right;
+    color: #282828;
+    margin-right: 150px;
+}
+
+.price {
+    font-family: Vazirmatn-Medium, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: right;
+    color: #282828;
+    margin-right: 150px;
+}
+
+.productId {
+    font-family: Vazirmatn-Medium, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: right;
+    color: #282828;
+    margin-right: 150px;
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: -670px;
+    margin-left: 328px;
+    justify-items: center;
+    vertical-align: center;
+    gap: 23px;
+    width: 1139px;
+    position: relative;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-evenly;
+    justify-items: center;
+    direction: rtl;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.nameStyle {
+    font-family: Vazirmatn-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #282828;
+    width: 92px;
+    height: 19px;
+    margin-right: -120px;
+}
+
+:global(body.darkMode) .nameStyle {
+    color: #ffc300;
+}
+
+.quantityStyle {
+    font-family: Vazirmatn-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    color: #282828;
+    width: 22px;
+    height: 20px;
+    margin-right: -15px;
+}
+
+:global(body.darkMode) .quantityStyle {
+    color: #ffc300;
+}
+
+.priceStyle {
+    font-family: Vazirmatn-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    color: #282828;
+    width: 69px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+:global(body.darkMode) .priceStyle {
+    color: #ffc300;
+}
+
+.idStyle {
+    font-family: Vazirmatn-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    color: #282828;
+    margin-left: 30px;
+}
+
+:global(body.darkMode) .idStyle {
+    color: #F43F5E;
+}
+
+.btnContainer {
+    display: flex;
+    gap: 15px;
+    margin-left: -120px;
+}
+
+.editBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.editBtn img {
+    width: 20px;
+    height: 20px;
+}
+
+.trashBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.trashBtn img {
+    width: 20px;
+    height: 20px;
+}

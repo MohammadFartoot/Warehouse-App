@@ -1,0 +1,193 @@
+.wholeBody {
+    min-width: 900px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+}
+
+.header input {
+    width: 1010px;
+    height: 68px;
+    position: relative;
+    margin-top: 28px;
+    margin-left: 330px;
+    border: 1px solid #E4E4E4;
+    border-radius: 16px;
+    background: #FFFFFF;
+    text-align: right;
+    font-size: 18px;
+    color: #282828;
+    padding-right: 58px;
+    direction: rtl;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #E4E4E4;
+}
+
+input::placeholder {
+    font-family: Vazirmatn-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: right;
+    position: absolute;
+    top: 21px;
+    left: 875px;
+    color: #00000099;
+}
+
+.search {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50px;
+    left: 1295px;
+    margin-left: 0;
+}
+
+.user {
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    top: 41px;
+    left: 461px;
+    cursor: pointer;
+}
+
+.header span {
+    position: absolute;
+    height: 50px;
+    top: 38px;
+    left: 523px;
+    border: 1px solid #E4E4E4
+}
+
+.header h4 {
+    font-family: Vazirmatn-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #8D8D8D;
+    text-align: right;
+    position: absolute;
+    top: 41px;
+    left: 368px;
+}
+
+.header p {
+    font-family: Vazirmatn-Light, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #0C0C0C;
+    text-align: right;
+    position: absolute;
+    top: 61px;
+    left: 417px;
+}
+
+.toggleSwitch {
+    width: 80px;
+    height: 40px;
+    border: 2px solid grey;
+    border-radius: 40px;
+    margin-top: -52px;
+    margin-left: 1373px;
+    box-shadow: 1px 1px 8px dimgrey;
+    animation: slideIn 1.7s ease-out forwards;
+}
+
+:global(body.darkMode) .toggleSwitch {
+    background-color: #0C0C0C;
+}
+
+.circleButton {
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    background-color: #0e0eb9;
+    border-radius: 50%;
+    margin-left: 2.5px;
+    margin-top: 2.6px;
+    transition: transform 0.4s ease;
+    transform: translateX(0);
+}
+
+:global(body.darkMode) .circleButton {
+    transform: translateX(40px);
+}
+
+.moon {
+    width: 25px;
+    height: 25px;
+    margin-left: 3.8px;
+    margin-top: 3px;
+}
+
+.sun {
+    width: 20px;
+    height: 20px;
+    margin-left: 5.3px;
+    margin-top: 5.1px;
+}
+
+.setting {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 14px;
+    left: 1430px;
+}
+
+:global(body.darkMode) .setting {
+    background-color: #f7f8f8;
+    border-radius: 9px;
+}
+
+.title {
+    font-family: Vazirmatn-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #282828;
+    position: absolute;
+    top: 128px;
+    left: 1310px;
+}
+
+:global(body.darkMode) .title {
+    color: #ffc900;
+}
+
+.add {
+    font-family: Vazirmatn-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 132px;
+    height: 45px;
+    background-color: #55A3F0;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 300px;
+    margin-top: 35px;
+    border: none;
+    cursor: pointer;
+}
+
+:global(body.darkMode) .add {
+    background-color: #ffc300;
+    color: #282828;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(500%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(20%);
+        opacity: 1;
+    }
+}

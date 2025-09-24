@@ -1,0 +1,308 @@
+.title {
+    font-family: Kalameh-Medium, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 31px;
+    text-align: center;
+    color: #282828;
+    margin-top: 55px;
+}
+
+:global(body.darkMode) .title {
+    color: #FFFFFF;
+}
+
+.formBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 460px;
+    height: 596px;
+    border-radius: 40px;
+    border: 1px solid #E4E4E4;
+    margin: 130px auto;
+    background: #FFFFFF;
+}
+
+.formBox img {
+    width: 80px;
+    height: 84px;
+    margin-top: 55px;
+}
+
+.formBox p:not(.nameText, .passwordText) {
+    font-family: Vazirmatn-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    color: #282828;
+    margin-top: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.userInput {
+    font-family: Vazirmatn-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: right;
+    width: 400px;
+    height: 53px;
+    border-radius: 15px;
+    padding: 22px 15px;
+    margin-bottom: 13px;
+    border: none;
+    background: #F2F2F2;
+    text-align: right;
+}
+
+.userInput:focus {
+    border: 1px solid #282828;
+}
+
+.userLabel {
+    font-family: Vazirmatn-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #28282880;
+    text-align: right;
+    position: absolute;
+    white-space: nowrap;
+    top: 13px;
+    right: 20px;
+    transition: 0.4s ease;
+    pointer-events: none;
+}
+
+.userInput:focus + label,
+.userInput:not(:placeholder-shown) + label {
+    top: -1px;
+    right: 17px;
+    font-size: 13px;
+    background: #F2F2F2;
+    width: fit-content;
+    padding: 0 9px;
+    border-radius: 5px;
+}
+
+.passInput {
+    font-family: Vazirmatn-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: right;
+    width: 400px;
+    height: 53px;
+    border-radius: 15px;
+    padding: 22px 15px;
+    margin-bottom: 13px;
+    border: none;
+    background: #F2F2F2;
+    text-align: right;
+}
+
+.passInput:focus {
+    border: 1px solid #282828;
+}
+
+.passLabel {
+    font-family: Vazirmatn-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #28282880;
+    text-align: right;
+    position: absolute;
+    white-space: nowrap;
+    top: 13px;
+    right: 20px;
+    transition: 0.4s ease;
+    pointer-events: none;
+}
+
+.passInput:focus + label,
+.passInput:not(:placeholder-shown) + label {
+    top: -1px;
+    right: 17px;
+    font-size: 13.4px;
+    background: #F2F2F2;
+    width: fit-content;
+    padding: 0 9px;
+    border-radius: 5px;
+}
+
+.rptInput {
+    font-family: Vazirmatn-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: right;
+    width: 400px;
+    height: 53px;
+    border-radius: 15px;
+    padding: 22px 15px;
+    margin-bottom: 13px;
+    border: none;
+    background: #F2F2F2;
+    text-align: right;
+}
+
+.rptInput:focus {
+    border: 1px solid #282828;
+}
+
+.rptLabel {
+    font-family: Vazirmatn-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #28282880;
+    text-align: right;
+    position: absolute;
+    white-space: nowrap;
+    top: 12px;
+    right: 20px;
+    transition: 0.4s ease;
+    pointer-events: none;
+}
+
+.rptInput:focus + label,
+.rptInput:not(:placeholder-shown) + label {
+    top: -1px;
+    right: 17px;
+    font-size: 13px;
+    background: #F2F2F2;
+    width: fit-content;
+    padding: 0 9px;
+    border-radius: 5px;
+}
+
+.form span {
+    font-family: Vazirmatn-Regular, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #fa1e1e;
+    margin-left: 270px;
+    margin-top: -10px;
+    text-align: center;
+    display: block;
+    height: 20px;
+}
+
+.form button {
+    font-family: Vazirmatn-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    width: 400px;
+    height: 53px;
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background: #55A3F0;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.link {
+    font-family: Vazirmatn-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: right;
+    color: #3A8BED;
+    margin-top: 15px;
+    margin-left: 270px;
+    text-decoration: none;
+}
+
+.field {
+    position: relative;
+    margin-bottom: -2px;
+}
+
+.nameWrapper {
+    visibility: visible;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nameWrapper .nameAlert {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    top: -72px;
+    left: -370px;
+    cursor: pointer;
+}
+
+.nameText {
+    font-family: Vazirmatn-Regular, Arial, Helvetica, sans-serif;
+    visibility: hidden;
+    width: max-content;
+    position: absolute;
+    top: -55px;
+    left: -565px;
+    background-color: #7a7a7a;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 8px;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nameAlert:hover + .nameText {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.passwordWrapper {
+    visibility: visible;
+    display: inline-block;
+    position: relative;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.passwordWrapper .passwordAlert {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    top: -101px;
+    left: -370px;
+    cursor: pointer;
+}
+
+
+.passwordText {
+    font-family: Vazirmatn-Regular, Arial, Helvetica, sans-serif;
+    visibility: hidden;
+    width: max-content;
+    position: absolute;
+    top: -83px;
+    left: -545px;
+    background-color: #7a7a7a;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 8px;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.passwordAlert:hover + .passwordText {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+

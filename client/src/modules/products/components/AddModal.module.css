@@ -1,0 +1,209 @@
+.container input {
+    font-family: Vazirmatn-Light, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    width: 389px;
+    height: 42px;
+    border-radius: 8px;
+    padding: 0 12px;
+    background-color: #F2F2F2;
+    color: #8D8D8D;
+    border: none;
+    text-align: right;
+}
+
+.title {
+    font-family: Vazirmatn-Medium, Arial, Helvetica, sans-serif;;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: right;
+    color: #282828;
+    margin-top: -30px;
+    margin-right: 99px;
+}
+
+:global(body.darkMode) .title {
+    color: #f7f8f8;
+}
+
+.nameBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.productName {
+    font-family: Vazirmatn-Medium, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: right;
+    color: #282828;
+    margin-top: 25px;
+    margin-left: 345px;
+    white-space: nowrap;
+}
+
+:global(body.darkMode) .productName {
+    color: #f7f8f8;
+}
+
+.nameBox input::placeholder {
+    font-family: Vazirmatn-Light, Arial, Helvetica, sans-serif;;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: right;
+    color: #8D8D8D;
+    position: absolute;
+    top: 10px;
+    left: 335px;
+}
+
+.quantityBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.quantityTitle {
+    font-family: Vazirmatn-Medium, Arial, Helvetica, sans-serif;;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: right;
+    color: #282828;
+    margin-top: 15px;
+    margin-left: 304px;
+    white-space: nowrap;
+}
+
+:global(body.darkMode) .quantityTitle {
+    color: #f7f8f8;
+}
+
+.quantityBox input::placeholder {
+    font-family: Vazirmatn-Light, Arial, Helvetica, sans-serif;;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: right;
+    color: #8D8D8D;
+    position: absolute;
+    top: 10px;
+    left: 342px;
+}
+
+.priceBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.priceTitle {
+    font-family: Vazirmatn-Medium, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: right;
+    color: #282828;
+    margin-top: 15px;
+    margin-left: 346px;
+    white-space: nowrap;
+}
+
+:global(body.darkMode) .priceTitle {
+    color: #f7f8f8;
+}
+
+.priceBox input::placeholder {
+    font-family: Vazirmatn-Light, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: right;
+    color: #8D8D8D;
+    position: absolute;
+    top: 10px;
+    left: 340px;
+}
+
+.btnBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 39px;
+    gap: 10px;
+}
+
+.createBtn {
+    font-family: Vazirmatn-Medium, Arial, Helvetica, sans-serif;;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 185px;
+    height: 42px;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+    background-color: #55A3F0;
+    border: none;
+    cursor: pointer;
+}
+
+:global(body.darkMode) .createBtn {
+    background-color: #ffc300;
+    color: #282828CC;
+}
+
+.cancelBtn {
+    font-family: Vazirmatn-Medium, Arial, Helvetica, sans-serif;;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #282828CC;
+    width: 185px;
+    height: 42px;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+    background-color: #DFDFDF;
+    border: none;
+    cursor: pointer;
+}
+
+.createBtn:hover {
+    font-size: 0.94rem;
+}
+
+.cancelBtn:hover {
+    font-size: 0.94rem;
+}
+
+.container span {
+    color: #fa1e1e;
+    font-family: Vazirmatn-Medium, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    margin-top: -10px;
+    white-space: nowrap;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+
+
+
