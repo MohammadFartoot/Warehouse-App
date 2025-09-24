@@ -1,4 +1,4 @@
-# ⚛️ React Contact App
+# ⚛️ Warehouse App
 
 A scalable React + Vite Warehouse App following **feature-based architecture**.
 
