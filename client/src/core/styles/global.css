@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Kalameh-Light";
+    src: url("../fonts/Kalameh-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Kalameh-Regular";
+    src: url("../fonts/Kalameh-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Kalameh-Medium";
+    src: url("../fonts/Kalameh-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Vazirmatn-Light";
+    src: url("../fonts/Vazirmatn-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Vazirmatn-Regular";
+    src: url("../fonts/Vazirmatn-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Vazirmatn-Medium";
+    src: url("../fonts/Vazirmatn-Medium.ttf") format("truetype");
+}
+
+:root {
+    --bg-color: #f7f8f8;
+}
+
+.darkMode {
+    --bg-color: #161616;
+}
+
+body {
+    background-color: var(--bg-color);
+    min-width: 900px;
+    margin: 0 auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+

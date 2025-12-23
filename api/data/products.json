@@ -1,0 +1,92 @@
+[
+  {
+    "id": "6fb1dde9-9367-41af-86a4-c76c957d02f7",
+    "name": "Peanut butter",
+    "price": 67,
+    "quantity": 56
+  },
+  {
+    "id": "95e4c9d8-95ee-46ab-94bb-3cf8822b799a",
+    "name": "Basic t-shirt",
+    "price": 67,
+    "quantity": 56
+  },
+  {
+    "id": "1cb04a8f-60e2-40e8-82cf-5ea505813c88",
+    "name": "Sweatpants",
+    "price": 67,
+    "quantity": 56
+  },
+  {
+    "id": "b0a312cd-dc5a-4e9a-a345-741a59dc1f9f",
+    "name": "Olive oil",
+    "price": 30000,
+    "quantity": 2
+  },
+  {
+    "id": "b53d35ac-0f24-4c9d-95fb-8c75379909fb",
+    "name": "Nutella",
+    "price": 30000,
+    "quantity": 2
+  },
+  {
+    "id": "af353f2b-e851-47c0-be1b-b8c89daae21e",
+    "name": "Speaker",
+    "price": 30000,
+    "quantity": 872
+  },
+  {
+    "id": "7aa81d4f-3328-4ebe-8fe7-a50cfc31a205",
+    "name": "Smartwatch Bip 5",
+    "price": 90000,
+    "quantity": 77
+  },
+  {
+    "id": "6425b093-b9d5-40aa-a254-56c9d8094993",
+    "name": "Pantene shampoo",
+    "price": 900000,
+    "quantity": 8
+  },
+  {
+    "id": "b6ed60a4-6b35-4472-ab72-5abe9c4f9729",
+    "name": "Vitamin D",
+    "price": 11111,
+    "quantity": 99
+  },
+  {
+    "id": "d87ea386-a68c-4425-97c5-52edbca08fe4",
+    "name": "pineapple",
+    "price": 30000,
+    "quantity": 11
+  },
+  {
+    "id": "23cb6254-e026-485b-862c-c40774731e1a",
+    "name": "orange",
+    "price": 30000,
+    "quantity": 21
+  },
+  {
+    "id": "a48865bb-f4cc-455a-be8c-eac1f8daf514",
+    "name": "ali",
+    "price": 30000,
+    "quantity": 2
+  },
+  {
+    "id": "fe4b5488-9642-483b-a129-93c6b736016b",
+    "name": "banana",
+    "price": 40000,
+    "quantity": 55
+  },
+  {
+    "id": "39903e4b-e9b6-4fd1-8a89-6c75f9e071e9",
+    "name": "ali",
+    "price": 30000,
+    "quantity": 2
+  },
+  {
+    "id": "4ddf0c86-d2c8-444f-9f9a-6c9b29b5ef24",
+    "name": "tomato",
+    "price": 128000,
+    "quantity": 300
+  }
+]

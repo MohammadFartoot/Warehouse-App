@@ -1,0 +1,236 @@
+.wholeBody {
+    min-width: 900px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    width: 1010px;
+    height: 68px;
+    position: relative;
+    margin-top: 28px;
+    margin-left: 330px;
+    border: 1px solid #E4E4E4;
+    border-radius: 16px;
+    background: #FFFFFF;
+    padding-right: 58px;
+    direction: rtl;
+}
+
+.header input {
+    width: 700px;
+    background-color: transparent;
+    border: none;
+    color: #282828;
+    font-size: 18px;
+    text-align: right;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    font-family: Vazirmatn-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: right;
+    color: #00000099;
+}
+
+.search {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 32%;
+    right: 2%;
+    margin-left: 0;
+}
+
+.dashboardBox {
+    position: absolute;
+    top: -45%;
+    right: 132%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.user {
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    top: 41px;
+    left: 461px;
+    cursor: pointer;
+}
+
+.header span {
+    position: absolute;
+    height: 50px;
+    top: 38px;
+    left: 523px;
+    border: 1px solid #E4E4E4
+}
+
+.header h4 {
+    font-family: Vazirmatn-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #8D8D8D;
+    text-align: right;
+    position: absolute;
+    top: 41px;
+    left: 368px;
+}
+
+.header p {
+    font-family: Vazirmatn-Light, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #0C0C0C;
+    text-align: right;
+    position: absolute;
+    top: 61px;
+    left: 417px;
+}
+
+.toggleSwitch {
+    width: 80px;
+    height: 40px;
+    border: 2px solid grey;
+    border-radius: 40px;
+    margin-top: -52px;
+    margin-left: 1363px;
+    box-shadow: 1px 1px 8px dimgrey;
+    animation: slideIn 1.7s ease-out forwards;
+    overflow-x: hidden;
+}
+
+:global(body.darkMode) .toggleSwitch {
+    background-color: #0C0C0C;
+}
+
+.circleButton {
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    background-color: #0e0eb9;
+    border-radius: 50%;
+    margin-left: 2.5px;
+    margin-top: 2.6px;
+    transition: transform 0.4s ease;
+    transform: translateX(0);
+}
+
+:global(body.darkMode) .circleButton {
+    transform: translateX(40px);
+}
+
+.moon {
+    width: 25px;
+    height: 25px;
+    margin-left: 3.8px;
+    margin-top: 3px;
+}
+
+.sun {
+    width: 20px;
+    height: 20px;
+    margin-left: 5.3px;
+    margin-top: 5.1px;
+}
+
+.manageBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 820px;
+}
+
+.titleBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.setting {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+:global(body.darkMode) .setting {
+    background-color: #f7f8f8;
+    border-radius: 9px;
+}
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    white-space: nowrap;
+    font-family: Vazirmatn-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #282828;
+}
+
+:global(body.darkMode) .title {
+    color: #ffc900;
+}
+
+.btnBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0px;
+}
+
+.add {
+    font-family: Vazirmatn-Regular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 132px;
+    height: 45px;
+    background-color: #55A3F0;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 35px;
+    border: none;
+    cursor: pointer;
+}
+
+:global(body.darkMode) .add {
+    background-color: #ffc300;
+    color: #282828;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(500%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(20%);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1500px) {
+    .header {
+        margin: 28px auto 0 180px;
+    }
+    .toggleSwitch {
+        margin-bottom: 0;
+        margin-left: 1210px;
+    }
+    .manageBox {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}
