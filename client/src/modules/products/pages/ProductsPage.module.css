@@ -5,9 +5,6 @@
 
 .header {
     display: flex;
-}
-
-.header input {
     width: 1010px;
     height: 68px;
     position: relative;
@@ -16,16 +13,21 @@
     border: 1px solid #E4E4E4;
     border-radius: 16px;
     background: #FFFFFF;
-    text-align: right;
-    font-size: 18px;
-    color: #282828;
     padding-right: 58px;
     direction: rtl;
 }
 
+.header input {
+    width: 700px;
+    background-color: transparent;
+    border: none;
+    color: #282828;
+    font-size: 18px;
+    text-align: right;
+}
+
 input:focus {
     outline: none;
-    border: 2px solid #E4E4E4;
 }
 
 input::placeholder {
@@ -33,9 +35,6 @@ input::placeholder {
     font-weight: 400;
     font-size: 16px;
     text-align: right;
-    position: absolute;
-    top: 21px;
-    left: 875px;
     color: #00000099;
 }
 
@@ -43,9 +42,17 @@ input::placeholder {
     width: 24px;
     height: 24px;
     position: absolute;
-    top: 50px;
-    left: 1295px;
+    top: 32%;
+    right: 2%;
     margin-left: 0;
+}
+
+.dashboardBox {
+    position: absolute;
+    top: -45%;
+    right: 132%;
+    z-index: 1;
+    cursor: pointer;
 }
 
 .user {
@@ -93,9 +100,10 @@ input::placeholder {
     border: 2px solid grey;
     border-radius: 40px;
     margin-top: -52px;
-    margin-left: 1373px;
+    margin-left: 1363px;
     box-shadow: 1px 1px 8px dimgrey;
     animation: slideIn 1.7s ease-out forwards;
+    overflow-x: hidden;
 }
 
 :global(body.darkMode) .toggleSwitch {
@@ -132,13 +140,27 @@ input::placeholder {
     margin-top: 5.1px;
 }
 
+.manageBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 820px;
+}
+
+.titleBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    margin-top: 35px;
+}
+
 .setting {
-    display: inline-block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     width: 30px;
     height: 30px;
-    position: relative;
-    top: 14px;
-    left: 1430px;
 }
 
 :global(body.darkMode) .setting {
@@ -147,17 +169,25 @@ input::placeholder {
 }
 
 .title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    white-space: nowrap;
     font-family: Vazirmatn-Regular, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 24px;
     color: #282828;
-    position: absolute;
-    top: 128px;
-    left: 1310px;
 }
 
 :global(body.darkMode) .title {
     color: #ffc900;
+}
+
+.btnBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0px;
 }
 
 .add {
@@ -170,7 +200,6 @@ input::placeholder {
     background-color: #55A3F0;
     border-radius: 10px;
     padding: 10px;
-    margin-left: 300px;
     margin-top: 35px;
     border: none;
     cursor: pointer;
@@ -189,5 +218,19 @@ input::placeholder {
     to {
         transform: translateX(20%);
         opacity: 1;
+    }
+}
+
+@media (max-width: 1500px) {
+    .header {
+        margin: 28px auto 0 180px;
+    }
+    .toggleSwitch {
+        margin-bottom: 0;
+        margin-left: 1210px;
+    }
+    .manageBox {
+        margin-left: 0;
+        margin-right: 10px;
     }
 }

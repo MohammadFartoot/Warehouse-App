@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 
 
 const registerUser = async (formData) => {
-    return await api.post("auth/register", formData);
+    return await api.post("/auth/register", formData);
 }
 
 export const useRegister = () => {

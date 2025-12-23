@@ -91,6 +91,7 @@
     width: 92px;
     height: 19px;
     margin-right: -120px;
+    white-space: nowrap;
 }
 
 :global(body.darkMode) .nameStyle {
@@ -166,4 +167,10 @@
 .trashBtn img {
     width: 20px;
     height: 20px;
+}
+
+@media (max-width: 1500px) {
+    .listContainer {
+        margin-left: 170px;
+    }
 }

@@ -35,10 +35,12 @@ function ProductsPage() {
                     onChange={searchHandler}
                 />
                 <img className={styles.search} src={search} alt="search-icon"/>
-                <img className={styles.user} src={user} alt="user-icon" onClick={() => navigate("/dashboard")}/>
-                <span></span>
-                <h4>{userName}</h4>
-                <p>مدیر</p>
+                <div className={styles.dashboardBox} onClick={() => navigate("/dashboard")}>
+                    <img className={styles.user} src={user} alt="user-icon"/>
+                    <span></span>
+                    <h4>{userName}</h4>
+                    <p>مدیر</p>
+                </div>
             </div>
             <div
                 className={styles.toggleSwitch}
@@ -51,9 +53,15 @@ function ProductsPage() {
                         <img className={styles.sun} src={sun} alt="sun-icon"/>}
                 </div>
             </div>
-            <img className={styles.setting} src={setting} alt="setting-icon"/>
-            <p className={styles.title}>مدیریت کالا</p>
-            <button className={styles.add} onClick={() => openAddModal()}>افزودن محصول</button>
+            <div className={styles.manageBox}>
+                <div className={styles.btnBox}>
+                    <button className={styles.add} onClick={() => openAddModal()}>افزودن محصول</button>
+                </div>
+                <div className={styles.titleBox}>
+                    <p className={styles.title}>مدیریت کالا</p>
+                    <img className={styles.setting} src={setting} alt="setting-icon"/>
+                </div>
+            </div>
             <ProductsList/>
             <AddModal/>
             <EditModal/>
